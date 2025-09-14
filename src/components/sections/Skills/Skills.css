@@ -1,0 +1,134 @@
+/* Skills Section Styles */
+.skills {
+  padding: 4rem 0 6rem;
+  background: rgba(11, 10, 10, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .skills {
+    padding: 6rem 0;
+  }
+}
+
+.skills-animations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.skills-container {
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.skills-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .skills-title {
+    font-size: 3rem;
+  }
+}
+
+.skills-subtitle {
+  font-size: 1.125rem;
+  color: rgb(209, 213, 219);
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .skills-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.skill-category {
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(147, 51, 234, 0.5);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: all 0.5s ease;
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+.skill-category-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-category:hover {
+  border-color: rgb(147, 51, 234);
+  box-shadow: 0 0 30px rgba(167, 79, 237, 0.4), 0 0 60px rgba(167, 79, 237, 0.2);
+  background: rgba(147, 51, 234, 0.1);
+}
+
+.skill-category-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: rgb(196, 181, 253);
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.skill-category:hover .skill-category-title {
+  color: white;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: rgba(0, 0, 0, 0.3);
+  color: rgb(209, 213, 219);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(147, 51, 234, 0.3);
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: rgb(147, 51, 234);
+  color: white;
+  transform: translateY(-4px);
+}
