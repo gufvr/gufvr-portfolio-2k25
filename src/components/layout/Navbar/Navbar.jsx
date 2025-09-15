@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-content">
           <div className="navbar-logo" onClick={scrollToTop}>
-            <img src="/logo-gf.svg" alt="GF Logo" className="logo-image" /> 
+            <img src="/gf.svg" alt="GF Logo" className="logo-image" /> 
           </div>
           <ul className="navbar-menu">
             <li>
