@@ -62,7 +62,7 @@ const Hero = () => {
             <h1 className="hero-title">
               <span className="gradient-text">Gustavo Favero</span>
               <br />
-              <span className="hero-subtitle">Full Stack Developer</span>
+              <span className="hero-subtitle">Desenvolvedor Full Stack</span>
             </h1>
             
             <p className="hero-description">
