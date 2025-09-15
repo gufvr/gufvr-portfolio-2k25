@@ -66,8 +66,7 @@ const Hero = () => {
             </h1>
             
             <p className="hero-description">
-              Transformo ideias em experiências digitais excepcionais. 
-              Especialista em <strong className="tech-js">JavaScript</strong>, <strong className="tech-ts">TypeScript</strong>, 
+              Transformo ideias em soluções digitais com foco em performance e experiência do usuário, utilizando tecnologias como <strong className="tech-js">JavaScript</strong>, <strong className="tech-ts">TypeScript</strong>, 
               <strong className="tech-react"> React</strong>, <strong className="tech-node">Node.js</strong> e <strong className="tech-rn">React Native</strong>.
             </p>
 
