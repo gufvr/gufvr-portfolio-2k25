@@ -48,7 +48,7 @@ const Projects = () => {
       title: 'Serralheiro Eduardo Rodrigues',
       description:
         'Projeto desenvolvido para o Serralheiro Eduardo Rodrigues, com o objetivo de concentrar seus canais de contato e apresentar seus serviços de forma clara e profissional.',
-      technologies: ['TailWindCSS', 'Cloudflare', 'JavaScript'],
+      technologies: ['TailWindCSS', 'Resposividade', 'JavaScript'],
       features: ['Interface moderna e intuitiva', 'Integração com WhatsApp'],
       liveUrl: 'https://eduardo-rodrigues-serralheiro.vercel.app/',
       codeUrl: 'https://github.com/gufvr/eduardo-serralheiro',
@@ -72,7 +72,6 @@ const Projects = () => {
 
   return (
     <section id="projetos" className="projects">
-      {/* Subtle Background Animation */}
       <div className="projects-animations">
         <div
           className="tech-particle"
@@ -93,7 +92,6 @@ const Projects = () => {
       </div>
 
       <div className="projects-container">
-        {/* Section Header */}
         <div className="projects-header">
           <h2 className="projects-title">
             Projetos em <span className="gradient-text">Destaque</span>
@@ -149,12 +147,10 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Project Content */}
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
 
-                {/* Features */}
                 <div className="project-features">
                   {project.features.map(feature => (
                     <span key={feature} className="feature-tag">
@@ -163,7 +159,6 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* Project Links */}
                 <div className="project-links">
                   <a
                     href={project.liveUrl}
@@ -174,7 +169,7 @@ const Projects = () => {
                     {project.id === 3
                       ? 'Download APK'
                       : project.id === 2
-                      ? 'Ver App'
+                      ? 'Ver Site'
                       : 'Ver Site'}
                   </a>
                   <a
